@@ -21,10 +21,10 @@ Production-grade video analytics platform for autonomous monitoring of waste con
 
 ## Detections
 
-![Overflowing bin detected](docs/demo1.jpg)
-![Litter and full bin detected](docs/demo3.jpg)
+![Annotated samples](docs/val_batch1_labels.jpg)
+![Annotated samples](docs/val_batch2_labels.jpg)
 
-*Live model predictions: overflowing bins and scattered litter with confidence scores.*
+*Annotated validation samples: bins and scattered litter under varied lighting and angles.*
 
 ## How it works
 
