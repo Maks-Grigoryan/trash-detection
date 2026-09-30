@@ -50,7 +50,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **Architecture** | YOLOv8, custom-trained (Ultralytics 8.3.40) |
+| **Architecture** | YOLOv8, fine-tuned from pretrained weights (Ultralytics 8.3.40) |
 | **Classes (3)** | `bin_empty` · `bin_full` · `trash_around` |
 | **Dataset** | ~11.7k annotated images, YOLO format (train / valid / test) |
 | **Training** | 300 epochs · imgsz 1024 · batch 12 · GPU · early-stopping patience 100 |
@@ -68,7 +68,7 @@ flowchart LR
 
 ## What I built
 
-- Custom **3-class dataset pipeline** (collection → annotation QA → augmentation → YOLO export) and the full **training loop through 6 weight iterations** to the production `best` checkpoint
+- Custom **3-class dataset pipeline** (collection → annotation QA → augmentation → YOLO export) and **fine-tuning of pretrained YOLOv8 through 6 weight iterations** to the production `best` checkpoint
 - **AI worker**: scheduled multi-camera polling, Redis task queue with deduplication, snapshot→HLS fallback capture, priority mapping, annotated-frame streaming
 - **Forecasting module**: negative sampling of quiet hours, sample weighting, weekly retraining, 24h probability API
 - **Backend**: dual auth (JWT users + worker keys), AES-256-GCM camera credentials, per-device token rotation, media-server self-healing, 30-day retention
