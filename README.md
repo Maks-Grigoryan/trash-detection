@@ -21,10 +21,10 @@ Production-grade video analytics platform for autonomous monitoring of waste con
 
 ## Detections
 
-![Validation detections](docs/val_batch1_pred.jpg)
-![Validation detections](docs/val_batch2_pred.jpg)
+![Annotated samples](docs/val_batch1_labels.jpg)
+![Annotated samples](docs/val_batch2_labels.jpg)
 
-*Validation-set predictions: bins and scattered litter under varied lighting and angles.*
+*Annotated validation samples: bins and scattered litter under varied lighting and angles.*
 
 ## How it works
 
